@@ -32,24 +32,41 @@ function checkAge(userName, age){
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
 function checkCoor(x, y){
+ 
+    switch(true){
 
-    switch(x, y){
-
-        case x > 0 && y > 0:
+        case (x > 0 && y > 0):
             console.log("Quadrant 1")
+            break;
         case x == 0 && (y > 0 || y < 0):
             console.log("x axis")
+            break;
         case (x > 0 || x < 0) && y == 0:
             console.log("y axis")
+            break;
         case x > 0 && y < 0:
             console.log("Quadrant 2")
+            break;
         case x < 0 && y < 0:
             console.log("Quadrant 3")
+            break;
         case x < 0 && y > 0:
             console.log("Quadrant 4")
+            break;
+        case x == 0 && y == 0:
+            console.log("origin")
+            break;
+        default:
+            console.log("invalid point")
     }
 
 }
+
+checkCoor(0,0)
+checkCoor(1, 5)
+checkCoor(-5, 5)
+checkCoor(5, -5)
+checkCoor(0, 4)
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
